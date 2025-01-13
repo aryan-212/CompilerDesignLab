@@ -4,8 +4,8 @@
 %}
 
 %%
-aaa { printf("aaa matched\n"); }  // Rule to print "Gayathri" and increment i
-// 'aaa' is the regex that if matched executes the value
+aaa { printf("aaa matched\n"); }  // Rule to print "Gayathri"
+p* { printf("\n The text matched is %s and the length is %d\n", yytext,yyleng);}
 %%
 
 int yywrap() {
